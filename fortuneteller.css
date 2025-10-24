@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(101, 101, 167);
+    color: rgb(77, 15, 134);
+}
+
+p{
+    border: 5px solid rgb(144, 130, 245);
+}
+
+#firstname{
+    background-color: rgb(208, 199, 243);
+}
+
+#favcolor{
+    background-color: rgb(208, 199, 243);
+}
+
+#birthmonth{
+    background-color: rgb(208, 199, 243);
+}
+
+#othernames{
+    background-color: rgb(208, 199, 243);
+}
+
+#tellfortune{
+    background-color: rgb(77, 15, 134);
+    color: rgb(208, 199, 243);
+}

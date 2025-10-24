@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="fortuneteller.css">
 </head>
 <body>
-    <script> src="fortuneteller.js" </script>
+    <h1> Fortune Teller </h1>
+    <p> Enter your information below and I will tell you what you need in your life</p>
+    <form>
+        <label for="firstname"> Who Are You? (give me your name)</label>
+        <input type="text" id="firstname"> <!--What kind of form are you making? what do you want the user to be able to do?-->
+
+        <label for="favcolor"> Tell me your Favorite Color</label>
+        <input type="text" id="favcolor">
+
+        <label for="birthmonth"> When were you born?</label> <!--why not try this with zodiac?-->
+        <select name="birthmonth" id="birthmonth">
+            <option> </option>
+            <option value="1">January </option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December </option>
+        </select>
+
+        <label for="othernames"> Need Name Ideas? Try Typing These</label> <!--why not try this with zodiac?-->
+        <select name="othernames" id="othernames">
+            <option> </option>
+            <option value="1">Greg </option>
+            <option value="2">Beef</option>
+            <option value="3">Mr Clean</option>
+            <option value="4">Richard</option>
+            <option value="5">Cleetus</option>
+            <option value="6">Donald</option>
+            <option value="7">Craig</option>
+            <option value="8">Thing Of The Night</option>
+            <option value="9">Jack</option>
+            <option value="10">Gertrude</option>
+            <option value="11">Ronald</option>
+            <option value="12">Phillip </option>
+        </select>
+
+
+        <input type="button" id="tellfortune" value="Are You Prepared?">
+       <!-- <input type="reset">  only use if you have a reason to! make this red or give 
+        a banner saying are you sure or something like that-->
+    </form>
+
+    <p id="userfortune"> Fortune Will Be Here. Prepare Yourself</p> <!--make this Round perhaps-->
+
+    <script src="fortuneteller.js"></script> <!--javascript goes in closing tag bc it needs 
+    the the other info to load so it has things to act on. ohterwise your site doesnt
+    work as intended-->
 </body>
 </html>
