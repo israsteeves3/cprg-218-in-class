@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fortuneteller</title>
     <link rel="stylesheet" href="fortuneteller.css">
 </head>
 <body>
-    <h1> Fortune Teller </h1>
-    <p> Enter your information below and I will tell you what you need in your life</p>
+    <h1 id="title"> Fortune Teller&trade; </h1>
+    <p id="enterinfo"> Enter your information below and I will tell you what you need in your life</p>
     <form>
+        <div id="questions">
         <label for="firstname"> Who Are You? (give me your name)</label>
         <input type="text" id="firstname"> <!--What kind of form are you making? what do you want the user to be able to do?-->
 
@@ -49,7 +50,7 @@
             <option value="11">Ronald</option>
             <option value="12">Phillip </option>
         </select>
-
+    </div>
 
         <input type="button" id="tellfortune" value="Are You Prepared?">
        <!-- <input type="reset">  only use if you have a reason to! make this red or give 

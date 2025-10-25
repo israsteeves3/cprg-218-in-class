@@ -54,6 +54,11 @@ tellfortune.addEventListener('click',function(){
         userfortune.textContent = "Why are you running?"
     }
 
+    else if(yourname=="kurstann"){
+        //console.log("Sorry you are beef :(")
+        userfortune.textContent = " congutilions."
+    }
+
       else if(yourname=="gertrude"){
         //console.log("Sorry you are beef :(")
         userfortune.textContent = "life is gonna suck for you. it might get better. maybe. think about a career change. this one isnt working for you"
@@ -130,7 +135,11 @@ tellfortune.addEventListener('click',function(){
     }
 
     else if(yourcolor == "grey"){ 
-        userfortune.textContent += " Haha Piss Time"
+        userfortune.textContent += " Three Years. Six Months. Three Weeks. Eight Days. Four Hours. Three Minutes. Beware"
+    }
+
+    else if(yourcolor == "puke"){ 
+        userfortune.textContent += " What do YOU think you need to do? why are you asking me?"
     }
 
 
