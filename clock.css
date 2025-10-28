@@ -1,0 +1,22 @@
+
+.morning{
+    background-color: rgb(255, 255, 120);
+    color: black;
+}
+
+.afternoon{
+    background-color: rgb(255, 210, 126);
+    color: black;
+}
+
+.evening{
+    background-color: rgb(120, 120, 255);
+    color: white;
+}
+
+.night{
+    background-color: black;
+    color: white;
+}
+
+/*can look into transistions to show a gradient switching btwn times of day*/
