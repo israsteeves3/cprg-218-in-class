@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+    <link rel="stylesheet" href="eightball.css">
+</head>
+<body>
+    <h1>The Magic 8 Ball</h1>
+
+    <form>
+        <label for="question">What do you want to Know?</label> <!--for= explains that the label and input are connected 
+        and therefore in your code they need to match-->
+        <input type="text" id="question" style="width: 60ch;"> <!--changing inline bc it sfor one thing. ch is character count, allows in
+        this case for 60 characters and eliminates scrolling issue. can use user research to see what size, bc sometimes if too small will
+        encourage small answers and less feedback on forms-->
+        	<!--<input type="text" id="question" placeholder="What do you want to ask the magic 8 ball?"> this will give 
+            placeholder text in the box and when the box is typed in the text you added there disappears-->
+        <input type="button" id="shake" value="Ask Now"> <!--can put an emojii here if you want, but with UX in mind, add text 
+        with it if using an emojii. labelled as shake bc js doesnt like ask-->
+    </form>
+    <div id="ball">
+        <p id="answer">8</p>
+    </div> <!--div to allow the black outside-->
+    <script src="eightball.js"></script>
+</body>
+</html>
