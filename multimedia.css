@@ -1,0 +1,22 @@
+body{
+    background-color: grey;
+}
+/*put flex in here to put the questions on the next line?*/
+/*active makes it only happen when pressed*/
+#correctanswer:active{
+    background-color: palegreen;
+}
+
+#wronganswer:active{
+    background-color: palevioletred;
+}
+
+
+/*added these for fun*/
+#correctanswer{
+    color: forestgreen;
+}
+
+#wronganswer{
+    color: red;
+}
