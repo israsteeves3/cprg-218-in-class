@@ -1,0 +1,95 @@
+body{
+    background-color: tan;
+}
+
+a{
+    background-color:blue;
+    color:white;
+    padding:2rem;
+    transition: background-color 2s;
+    font-size: 100%;
+    transition: padding 3s;
+    /*default size usuallly is foine, but with transistions in css it 
+    doesnt like implied sizing, needs to be told exactly what to do*/
+}
+
+a:hover{
+    background-color:red;
+    transition:background-color 1s;
+    padding: 3rem;
+    transition: padding 3s;
+    font-size: 150%;
+    transition: font-size 4s;
+}
+
+/*REMEMBER hover doesnt work on mobile unless they have a mouse or stylus bc yknow its fingers
+this is changing the text box from blue to red on hover with a one second delay. 
+think sbout the little project you did woth jez with the color changing box
+this can be used to change padding for when a button is active, etc
+even numbered increments look smoother to the human eye, so dont bother with odd numbers unless you know what 
+youre doing. this is for tramsition speed*/
+
+/*time to learn transform- rotating scaling and skewing are the three most important ones
+best to do this with vector images, like things built in illustrator bc thats just code*/
+
+
+img{
+    /*transform: skew(0,20deg); /*X axis, then Y axis. commented out bc we just did this to show us how*/ 
+    /*transform:rotate(45deg); can use this as a negative 45 for example to mske it rotate the other way think
+    about graphs*/
+    /*transform: scale(2); /* 2 means two times its original size*/
+    /*transform: rotate(0deg);
+    transition: transform 2s;*/
+    transition:opacity 4s;
+    /*this is setting the default for a return position before doing the transition*/
+}
+
+
+img:hover{
+    transform: rotate(75deg) scale(0.5) skew(0,45deg); /* having the space btwn these are important
+    scale(2) makes it two times larger as it transforms. 
+    zooms right into ur fucken FACE
+    doing like 0.5 makes it smaller. larger makes ppl think item is coming towards you 
+    and smaller is further away*/
+    transition: transform 2s;
+
+    /*opacity: 0; 
+    transition: opacity 4s;
+    /*item still exists just cant see it. display none makes it gone
+    opacity works on a scale of zero to one, so 80% is 0.8*/
+}
+
+h1{
+    transform: rotate(0deg);
+    transition: transform 2s;
+}
+
+h1:hover{
+    transform: rotate(360deg) scale(0.5) skew(0,45deg);
+    transition: transform 2s;
+}
+/*wonder how to give this a trail to show the pathing of it*/
+
+/*key frame animation time*/
+div{
+    background-color:black;
+    color:white;
+    padding:1rem;
+    position: relative;
+    animation-name:movebox; /*this i s a made up name we chose*/
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite; /*how many times it runs*/
+    margin-left: 20px; /* i just put this here bc im annoyed with seeing it in the corner while coding*/
+    animation-direction: alternate; /*this allows it to move smoothly top to bottom and not jump back to top*/
+}
+/*keyframes looks at a percentage of the time in the above div in this case. 
+it scales according to the source code*/
+@keyframes movebox{
+    0%{top:0; background-color: rgb(128, 0, 0);}
+    20%{top:50px; background-color: rgb(255, 153, 0);}
+    40%{top:100px; background-color: rgb(204, 211, 0);}
+    60%{top:150px; background-color: green;}
+    80%{top:200px; background-color: rgb(4, 58, 255);}
+    100%{top:250px; background-color: rgb(94, 0, 128);}
+}
