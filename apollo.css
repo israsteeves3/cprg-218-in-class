@@ -1,0 +1,17 @@
+h1{
+    transform: rotate(0deg);
+    transition: transform 2s;
+}
+
+h1:hover{
+    transform: rotate(360deg) scale(0.5) skew(0,45deg);
+    transition: transform 5s;
+}
+
+button{
+    background-color: paleturquoise;
+}
+
+button:hover{
+    background-color: rgb(230, 91, 91);
+}

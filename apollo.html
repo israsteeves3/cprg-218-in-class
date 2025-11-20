@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo8</title>
+    <link rel="stylesheet" href="apollo.css">
+</head>
+<body>
+    <div>
+        <h1 id="apollo">Apollo 8</h1>
+    </div>
+
+    <button id="ch1">Meet Them</button>
+    <button id="ch2">Launch Them</button>
+    <button id="ch3">They Speak</button>
+
+    <form>
+        <label for="vol">Volume</label>
+        <input type="range" id="vol" min="0" max="1" step="0.1" value="0.2"> 
+        <!--this is the stagger effect so it doesnt run smooth and you can feel "grooves" for the volume increments-->
+        <output id="showvolume">20%</output>
+    </form>
+
+    <video controls id="vid">
+        <source src="apollo8.mp4">
+    </video>
+
+    <div>
+        <h2 id="factheading">DID YOU KNOW?</h2>
+        <p id="factbody">HERE ARE SOME FACTS FOR YOU. </p>
+    </div>
+    
+    <script src="apollo.js"></script>
+</body>
+</html>
