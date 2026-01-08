@@ -18,7 +18,7 @@ something went wrong here i pulled dans code from playcode below
 */
 
 
-      fetch("http://api.openweathermap.org/data/2.5/weather?q=Calgary&appid=a49f892b9f8d34d1951c46c48548e3ea&units=metric")
+      fetch("http://api.openweathermap.org/data/2.5/weather?q=Cancun&appid=6cff9a6c350512ca8853afea99d73f33&units=metric")
       .then(response => response.json())
       .then(data => {
         console.log(data);
